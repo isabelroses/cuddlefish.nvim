@@ -65,7 +65,7 @@ return function(theme, config)
     -- variables
     ['@variable'] = { theme.syntax.identifier },
     ['@variable.builtin'] = { link = '@constant' },
-    ['@variable.parameter'] = { link = '@variable' },
+    ['@variable.parameter'] = { theme.cherry },
     ['@variable.member'] = { theme.syntax.property },
     ['@property'] = { link = '@variable.member' },
 
