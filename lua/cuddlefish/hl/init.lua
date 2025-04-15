@@ -16,7 +16,7 @@ function M.setup(theme, config)
     'cuddlefish.hl.%s',
     { 'editor', 'syntax', 'treesitter', 'diagnostics' }
   )
-  load_hl('cuddlefish.hl.ft.%s', { })
+  load_hl('cuddlefish.hl.ft.%s', { 'nix' })
 
   load_hl(
     'cuddlefish.hl.integrations.%s',
