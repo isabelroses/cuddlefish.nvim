@@ -4,7 +4,7 @@ local M = {}
 M.default = {
   theme = {
     variant = 'fall',
-    accent = 'green',
+    accent = 'pink',
   },
   editor = {
     transparent_background = false,
