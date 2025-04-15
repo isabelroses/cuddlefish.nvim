@@ -12,6 +12,7 @@ M.colors = {
   snow = '#83C4E6',
   blue = '#7796DF',
   purple = '#9278E9',
+  violet = '#B37FED',
   pink = '#F186BE',
   cherry = '#CC6D91',
 }

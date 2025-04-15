@@ -31,6 +31,7 @@
 ---@field snow string
 ---@field blue string
 ---@field purple string
+---@field violet string
 ---@field pink string
 ---@field cherry string
 ---@field accent string
@@ -86,7 +87,7 @@ function M.setup(config, colors)
   theme.syntax = {
     keyword = theme.purple,
     identifier = theme.text,
-    property = theme.snow,
+    property = theme.violet,
     type = theme.aqua,
     context = theme.overlay2,
     operator = theme.skye,

@@ -59,7 +59,7 @@
 ---@field test boolean
 ---@field trailspace boolean
 
----@alias cuddlefish.types.colors.enum 'crust'|'softbase'|'mantle'|'base'|'surface0'|'surface1'|'surface2'|'overlay0'|'overlay1'|'overlay2'|'subtext0'|'subtext1'|'text'|'red'|'orange'|'yellow'|'lime'|'green'|'aqua'|'snow'|'blue'|'skye'|'purple'|'pink'|'cherry'
+---@alias cuddlefish.types.colors.enum 'crust'|'softbase'|'mantle'|'base'|'surface0'|'surface1'|'surface2'|'overlay0'|'overlay1'|'overlay2'|'subtext0'|'subtext1'|'text'|'red'|'orange'|'yellow'|'lime'|'green'|'aqua'|'snow'|'blue'|'skye'|'purple'|'violet'|'pink'|'cherry'
 ---@alias cuddlefish.types.colors { [cuddlefish.types.colors.enum]: string }
 
 ---@class cuddlefish.types.colorspec
