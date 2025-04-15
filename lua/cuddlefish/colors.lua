@@ -19,7 +19,7 @@ M.colors = {
 
 ---@type cuddlefish.types.colors
 M.shades = {
-  text = "#DCDEFF";
+  text = "#CED1F0";
   subtext1 = "#B6B8DE";
   subtext0 = "#999AC7";
   overlay2 = "#8787B2";
