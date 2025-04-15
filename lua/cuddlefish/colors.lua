@@ -2,7 +2,7 @@ local M = {}
 
 ---@type cuddlefish.types.colors
 M.colors = {
-  red = '#F66459',
+  red = '#F6598E',
   orange = '#F09262',
   yellow = '#EDE874',
   lime = '#C2E774',
@@ -11,9 +11,9 @@ M.colors = {
   skye = '#86DCE9',
   snow = '#83C4E6',
   blue = '#7796DF',
-  purple = '#9278E9',
+  purple = '#8B79E8',
   violet = '#B37FED',
-  pink = '#F186BE',
+  pink = '#F186ED',
   cherry = '#CC6D91',
 }
 
