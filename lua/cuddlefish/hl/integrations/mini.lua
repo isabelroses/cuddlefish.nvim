@@ -1,8 +1,8 @@
 local M = {}
 
----@param theme evergarden.types.theme
----@param config evergarden.types.config
----@return evergarden.types.hlgroups
+---@param theme cuddlefish.types.theme
+---@param config cuddlefish.types.config
+---@return cuddlefish.types.hlgroups
 M.get = function(theme, config)
   local cfg = config.integrations.mini
   if not cfg then

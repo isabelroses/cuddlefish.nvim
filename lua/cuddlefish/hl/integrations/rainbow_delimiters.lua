@@ -1,7 +1,7 @@
 local M = {}
 
----@param theme evergarden.types.theme
----@param _ evergarden.types.config
+---@param theme cuddlefish.types.theme
+---@param _ cuddlefish.types.config
 M.get = function(theme, _)
   return {
     RainbowDelimiterRed = { fg = theme.red },

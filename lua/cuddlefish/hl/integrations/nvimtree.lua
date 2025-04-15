@@ -1,7 +1,7 @@
 local M = {}
 
----@param theme evergarden.types.theme
----@param config evergarden.types.config
+---@param theme cuddlefish.types.theme
+---@param config cuddlefish.types.config
 M.get = function(theme, config)
   local colors = {
     folder = theme.overlay2,
