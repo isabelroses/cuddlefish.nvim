@@ -127,7 +127,7 @@ return function(theme, config)
     Special = { link = '@string.special' },
     Character = { link = '@character' },
     Delimiter = { link = '@punctuation.delimiter' },
-    MatchParen = { theme.orange },
+    MatchParen = { theme.blue },
     Operator = { link = '@operator' },
 
     Todo = { link = '@comment.todo' },

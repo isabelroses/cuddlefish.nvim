@@ -134,7 +134,7 @@ M.get = function(theme, config)
     table.insert(hlgroups, {
       MiniJump2dDim = { theme.overlay0 },
       MiniJump2dSpot = {
-        theme.orange,
+        theme.blue,
         style = { 'bold', 'underline' },
       },
       MiniJump2dSpotAhead = { theme.aqua },
