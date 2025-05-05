@@ -5,6 +5,7 @@ require('cuddlefish').setup {
   editor = {
     transparent_background = false,
   },
+  cache = false,
   -- color_overrides = {
   --   pink = '#f5c2e7',
   --   purple = '#cba6f7',

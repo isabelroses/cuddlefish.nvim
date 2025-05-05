@@ -67,6 +67,7 @@ M.default = {
   },
   overrides = {},
   color_overrides = {},
+  cache = true,
 }
 
 ---@type cuddlefish.types.config

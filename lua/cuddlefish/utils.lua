@@ -50,6 +50,9 @@ function M.set_hl(group, colors)
       vim.log.levels.ERROR
     )
   end
+  if require('cuddlefish.config').get().cache then
+    require('cuddlefish.cache').add(group, color)
+  end
 end
 
 ---@param hlgroups cuddlefish.types.hlgroups.OL
@@ -173,6 +176,27 @@ function M.make_hl_loader(hls, props)
       :totable()
     table.insert(hls, overlays)
   end
+end
+
+---@private
+---@param s string
+---@return number
+local function hash_str(s)
+  return vim.iter(ipairs(vim.split(s, ''))):fold(5381, function (hash, _, char )
+    return bit.lshift(hash, 5) + hash + string.byte(char)
+  end)
+end
+
+---@param v any
+---@return number|any
+function M.hash(v)
+  if type(v) == 'table' then
+    return vim.iter(pairs(v)):fold(0, function (hash , k, vv)
+      return bit.bxor(hash, hash_str(k .. tostring(M.hash(vv))))
+    end)
+  end
+
+  return v
 end
 
 return M

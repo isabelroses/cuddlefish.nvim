@@ -3,6 +3,7 @@
 ---@class cuddlefish.types.config
 ---@field theme cuddlefish.types.config.theme
 ---@field editor cuddlefish.types.config.editor
+---@field cache? boolean
 ---@field style? cuddlefish.types.styleconfig
 ---@field integrations? cuddlefish.types.config.integrations
 ---@field color_overrides? cuddlefish.types.colors

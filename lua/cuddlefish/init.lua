@@ -29,10 +29,22 @@ function cuddlefish.load(cfg)
     vim.go.background = 'dark'
   end
 
+  local cache = cfg.cache or false
+  if cache then
+    local needs_compile = require('cuddlefish.cache').needs_compile(cfg)
+    if not needs_compile then
+      return require('cuddlefish.cache').load()
+    end
+    require('cuddlefish.cache').clear()
+  end
+
   local theme = require('cuddlefish.theme').setup(cfg)
   local hlgroups = require('cuddlefish.hl').setup(theme, cfg)
-
   require('cuddlefish.utils').set_highlights(hlgroups)
+
+  if cache then
+    require('cuddlefish.cache').write(cfg)
+  end
 end
 
 function cuddlefish.colors()
